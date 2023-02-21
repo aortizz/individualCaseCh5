@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lulu's Plant Nursery </title>
+<link rel="stylesheet" href="lulusNursery.css">
+<script src="modernizr.custom.05819.js"></script>
+<script>
+      function displayMessage() {
+        var today = new Date();
+        var hour = today.getHours();
+
+        if (hour >= 0 && hour < 12) {
+          document.getElementById("greeting").innerHTML = "Good morning!";
+        } else if (hour >= 12 && hour < 18) {
+          document.getElementById("greeting").innerHTML = "Good afternoon!";
+        } else {
+          document.getElementById("greeting").innerHTML = "Good evening!";
+        }
+      }
+
+      if (window.addEventListener) {
+        window.addEventListener("load", displayMessage, false);
+      } else if (window.attachEvent) {
+        window.attachEvent("onload", displayMessage);
+      }
+    </script>
+</head>
+<body> 	
+
+<div id="wrapper">
+<header>
+ <p id="greeting"></p>
+<h1> Lulu's Plant Nursery</h1>
+ 
+</header>
+<nav>
+ <a href="index.html">Home</a>&nbsp;
+ <a href="plantmenu.html">Plant Menu</a>&nbsp;
+ <a href="aboutUs.html">About Us</a>&nbsp;
+ <a href="discount.html">Discount Calculator</a>&nbsp;
+ <a href="webSecurity.html">Web Security</a>&nbsp;
+ 
+</nav>
+
+
+<div id="homeplants">
+
+</div>
+
+
+<main>
+
+<h2>We Invite You To Visit Our Lovely Plant Nursery!</h2>
+
+<p>
+We are a family owned plant nursery with a broad selection of beautiful plants available for sale! You will enjoy our nursery as we have both indoor and an outdoor plant area for you to find the perfect plant to take home with you.
+</p>
+
+
+<p> A wonderful and peaceful escape for plant enthusiasts and for those looking to add another item to the collection.</p>
+
+<h3>Our Nursery has the following daily specials: </h3>
+<ul>
+<li>Monday - 10% Off </li>
+<li>Tuesday - Buy One Get $5 Off</li>
+<li>Wednesday - 10% Off Succulents</li>
+<li>Thursday & Friday - 15% Off</li>
+<li>Saturday - Free Pot with $25 Purchase</li>
+</ul>
+
+<div>
+2333 Pasilla Road<br>
+Riverside, CA, 92418<br>
+951-332-2312<br><br>
+</div>
+
+</main>
+<footer>
+Copyright &copy 2022 Lulu's Plant Nursery<br>
+<a href="mailto:alexortiz@gmail.com">alexortiz@gmail.com</a>
+<br> Owners:Alejandra Ortiz <br>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<title>Lulu's Plant Nursery Menu</title>
+<link rel="stylesheet" href="lulusNursery.css">
+<script src="modernizr.custom.05819.js"></script>
+<script>
+      function displayMessage() {
+        var today = new Date();
+        var hour = today.getHours();
+
+        if (hour >= 0 && hour < 12) {
+          document.getElementById("greeting").innerHTML = "Good morning!";
+        } else if (hour >= 12 && hour < 18) {
+          document.getElementById("greeting").innerHTML = "Good afternoon!";
+        } else {
+          document.getElementById("greeting").innerHTML = "Good evening!";
+        }
+      }
+
+      if (window.addEventListener) {
+        window.addEventListener("load", displayMessage, false);
+      } else if (window.attachEvent) {
+        window.attachEvent("onload", displayMessage);
+      }
+    </script>
+
+</head>
+
+<body>
+
+
+<div id="wrapper">
+<header>
+ <p id="greeting"></p>
+<h1> About Lulu's Plant Nursery </h1>
+
+</header>
+<nav>
+ <a href="index.html">Home</a>&nbsp;
+ <a href="plantmenu.html">Plant Menu</a>&nbsp;
+ <a href="aboutUs.html">About Us</a>&nbsp;
+ <a href="discount.html">Discount Calculator</a>&nbsp;
+ <a href="webSecurity.html">Web Security</a>&nbsp;
+ 
+</nav>
+<main>
+
+<img src="homenursery.jpg" alt="image of nursery" height="299" width="400" align="left"> 
+
+<h2>About Us Here at Lulu's Plant Nursery</h2>
+
+<dl>
+<dt><strong>History of Lulu's Plant Nursery</strong></dt>
+<dd> Lulu's Plant Nursery is a family owed Plant Nursery ran by a Mexican Woman who adores plants. Lulu's plant nursery was founded in 2019 and initially began with a nursery at home. Now Lulu's Plant Nursery is a staple for locals to pick up beautiful plants.</dd>
+
+<br>
+
+<dt><strong>Our Location</strong><dt>
+<dd>Our address is 2333 Pasilla Road, Riverside, CA, 92418 
+<br>
+ Phone number is (951)332-2312
+</dd>
+
+<br>
+
+<dt><strong>Hours of operation</strong></dt>
+<dd> Monday - Friday : 9am - 4pm
+<br>
+Saturday - Sunday : 10am - 5pm
+</dt>
+
+</dl>
+
+</main>
+<footer>
+Copyright &copy 2022 Lulu's Plant Nursery<br>
+<a href="mailto:alexortiz@gmail.com">alexortiz@gmail.com</a>
+</footer>
+</div>
+</body>
+</html>
+

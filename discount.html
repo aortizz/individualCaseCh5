@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<title>Lulu's Plant Nursery Discount </title>
+<link rel="stylesheet" href="lulusNursery.css">
+<script src="modernizr.custom.05819.js"></script>
+<script>
+      function displayMessage() {
+        var today = new Date();
+        var hour = today.getHours();
+
+        if (hour >= 0 && hour < 12) {
+          document.getElementById("greeting").innerHTML = "Good morning!";
+        } else if (hour >= 12 && hour < 18) {
+          document.getElementById("greeting").innerHTML = "Good afternoon!";
+        } else {
+          document.getElementById("greeting").innerHTML = "Good evening!";
+        }
+      }
+
+      if (window.addEventListener) {
+        window.addEventListener("load", displayMessage, false);
+      } else if (window.attachEvent) {
+        window.attachEvent("onload", displayMessage);
+      }
+    </script>
+	
+</head>
+
+<body>
+
+
+<div id="wrapper">
+<header>
+ <p id="greeting"></p>
+<h1> Discount for In Store Use</h1>
+
+</header>
+
+<nav>
+ <a href="index.html">Home</a>&nbsp;
+ <a href="plantmenu.html">Plant Menu</a>&nbsp;
+ <a href="aboutUs.html">About Us</a>&nbsp;
+ <a href="discount.html">Discount Calculator</a>&nbsp;
+ <a href="webSecurity.html">Web Security</a>&nbsp;
+ 
+</nav>
+
+<main>
+
+<h2>Please enter the estimated amount of your sale & % off as desrcibed below for an Approximate Total with Discount</h2>
+<p> <b> Anything over $20 gets 10% off. Over $50 gets 15% off. Over $100 gets 20% off. </b> Take a picture and present in store to apply the discount to your sale. </p>
+
+<br>
+<input id="price"> Estimated Price
+    <br><br>
+    <input id="discount">% off
+    <br><br>
+    <button onclick="getPrice()">
+Get total 
+</button>
+    <br><br>
+    <input readonly id="total">
+    <script>
+        getPrice = function() {
+            var numVal1 = Number(document.getElementById("price").value);
+            var numVal2 = Number(document.getElementById("discount").value) / 100;
+            var totalValue = numVal1 - (numVal1 * numVal2)
+            document.getElementById("total").value = totalValue.toFixed(2);
+        }
+    </script>
+
+
+</main>
+<footer>
+Copyright &copy 2022 Lulu's Plant Nursery<br>
+<a href="mailto:alexortiz@gmail.com">alexortiz@gmail.com</a>
+</footer>
+</div>
+</body>
+</html>

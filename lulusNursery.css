@@ -1,0 +1,97 @@
+body	{background-color: #6d8c3f;
+		color: #4E3524;
+		font-family: Ariel, Verdana, Sans-serif;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		}
+
+main	{
+		padding-left: 2em;
+		padding-right: 2em;
+		padding-bottom: 2em;
+		display: block;
+		}
+
+header	{background-color: #abbd9a;
+		color: #4E3524;
+		text-align: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		}
+
+h1		{font-size: 3em;
+		}
+
+
+h2		{color: #4E3524;
+		}
+		
+		
+h3, dt	{
+		color: #4E3524;
+		}
+		
+		
+h4
+	{
+		background-color: #edda8e;
+		font-size: 1.2em;
+		padding-left: .5em;
+		padding-bottom: .25em;
+		text-align: center;
+	}
+
+nav		{text-align: center;
+		font-weight: bold;
+		font-size: 1.5em;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		}
+		
+nav a { text-decoration: none; }
+
+
+footer	{background-color: #abbd9a;
+		font-size: .60em;
+		font-style: italic;
+		text-align: center;
+		padding: 1em;
+		border-top: 2px solid #8C3826;
+		
+		}
+
+img		{
+		padding-left: 10px;
+		padding-right: 10px;
+		}
+
+
+#wrapper	{background-color: #f5f5dc;
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+		min-width: 900px;
+		max-width: 1280px;
+		box-shadow: 3px 3px 3px #676767;
+		}
+		
+.details {
+		padding-left: 20%;
+		padding-right: 20%
+		}
+
+#homeplants	{
+			background-image: url(homeplants.jpg);
+			height: 300px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			}
+			
+#homeindoor {
+			background-image: url(homeindoor.jpg);
+			height: 400px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			}
+

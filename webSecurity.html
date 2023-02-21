@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lulu's Web Security Tips </title>
+<link rel="stylesheet" href="lulusNursery.css">
+<script src="modernizr.custom.05819.js"></script>
+<script>
+      function displayMessage() {
+        var today = new Date();
+        var hour = today.getHours();
+
+        if (hour >= 0 && hour < 12) {
+          document.getElementById("greeting").innerHTML = "Good morning!";
+        } else if (hour >= 12 && hour < 18) {
+          document.getElementById("greeting").innerHTML = "Good afternoon!";
+        } else {
+          document.getElementById("greeting").innerHTML = "Good evening!";
+        }
+      }
+
+      if (window.addEventListener) {
+        window.addEventListener("load", displayMessage, false);
+      } else if (window.attachEvent) {
+        window.attachEvent("onload", displayMessage);
+      }
+    </script>
+</head>
+<body> 	
+
+<div id="wrapper">
+<header>
+ <p id="greeting"></p>
+<h1> Lulu's Web Security Tips</h1>
+ 
+</header>
+<nav>
+ <a href="index.html">Home</a>&nbsp;
+ <a href="plantmenu.html">Plant Menu</a>&nbsp;
+ <a href="aboutUs.html">About Us</a>&nbsp;
+ <a href="discount.html">Discount Calculator</a>&nbsp;
+ <a href="webSecurity.html">Web Security</a>&nbsp;
+ 
+</nav>
+
+<main>
+
+<h2> Navigator Object & Screen Object Properties </h2>
+
+<p>
+Below are is a list of a few properties that the Navigator Object and the Screen Object use to gather information of the current browser app.
+</p>
+
+<ul>
+<li>Navigator Object Property:appName Description-Name of the web browser displaying the page</li>
+<li>Navigator Object Property:appVersion Description-Version of the web browser displaying the page</li>
+<li>Navigator Object Property:geolocation Description-API for accesing the user's current location and user permission setting denying or allowing access to that information</li>
+<li>Screen Object Property:availHeight Description-Height of the display screen</li>
+<li>Screen Object Property:availWidth Description-Width of the display screen</li>
+<li>Screen Object Property:pixelDepth Description-Display screen's color resolution in bits per pixel</li>
+</ul>
+
+
+
+
+<h3>Web Security Practices</h3>
+
+<p> Please see a list of websites below that go into depth about Web Security practices.</p> 
+
+<br>
+
+<a href="https://clario.co/blog/top-internet-safety-rules/">Top Internet Safety Rules</a>&nbsp;
+<p>This web page provides a list of the the top internet safety rules such as website reliability and confidentiality.</p>
+<br>
+
+<a href="https://us.norton.com/blog/kids-safety/stop-stressing-10-internet-safety-rules-to-help-keep-your-family-safe-online#point1">Keep Family Safe Online</a>&nbsp;
+<p>This website goes over why internet safety is important for your family and tips on how to keep them safe online.</p>
+
+<br>
+
+ <a href="https://www.cisa.gov/uscert/ncas/tips/ST06-003">Social Media Safety</a>&nbsp;
+ <p>It is important to keep caution on Social medias as well, this web page goes into detail about safety practice on Social media.</p>
+ <br>
+ <br>
+ 
+
+<div>
+2333 Pasilla Road<br>
+Riverside, CA, 92418<br>
+951-332-2312<br><br>
+</div>
+
+</main>
+<footer>
+Copyright &copy 2022 Lulu's Plant Nursery<br>
+<a href="mailto:alexortiz@gmail.com">alexortiz@gmail.com</a>
+<br> Owners:Alejandra Ortiz <br>
+</footer>
+</div>
+</body>
+</html>

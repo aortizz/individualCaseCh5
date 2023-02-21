@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<title>Lulu's Plant Nursery Menu </title>
+<link rel="stylesheet" href="lulusNursery.css">
+<script src="modernizr.custom.05819.js"></script>
+<script>
+      function displayMessage() {
+        var today = new Date();
+        var hour = today.getHours();
+
+        if (hour >= 0 && hour < 12) {
+          document.getElementById("greeting").innerHTML = "Good morning!";
+        } else if (hour >= 12 && hour < 18) {
+          document.getElementById("greeting").innerHTML = "Good afternoon!";
+        } else {
+          document.getElementById("greeting").innerHTML = "Good evening!";
+        }
+      }
+
+      if (window.addEventListener) {
+        window.addEventListener("load", displayMessage, false);
+      } else if (window.attachEvent) {
+        window.attachEvent("onload", displayMessage);
+      }
+    </script>
+</head>
+
+<body>
+
+
+<div id="wrapper">
+<header>
+ <p id="greeting"></p>
+<h1>Lulu's Plant Menu </h1>
+</header>
+<nav>
+
+ <a href="index.html">Home</a>&nbsp;
+ <a href="plantmenu.html">Plant Menu</a>&nbsp;
+ <a href="aboutUs.html">About Us</a>&nbsp;
+  <a href="discount.html">Discount Calculator</a>&nbsp;
+  <a href="webSecurity.html">Web Security</a>&nbsp;
+</nav>
+
+<main>
+ 
+
+<h2>Our Plant Menu</h2>
+
+
+<p>
+Take a look below to see a few of the plants that we carry, please take into consideration that some plants might be out of season.
+</p>
+
+<h4> Indoor Plants </p>
+
+
+<div class="details">
+<a href="homeindoor.jpg">
+<img src="homeindoor.jpg" alt="indoor plants" width="200" height="200">
+</a>
+
+<a href="homepothos.jpg">
+<img src="homepothos.jpg" alt="indoor pothos plants" width="200" height="200">
+</a>
+
+<p>
+We carry a variety of indoor plants such as snake plants and a variety of pothos plants. 
+</p>
+</div>
+
+<h4> Outdoor Plants </p>
+
+
+<div class="details" >
+
+<a href="succulent.jpg">
+<img src="succulent.jpg" alt="succulent" width="200" height="200">
+</a>
+
+<a href="homesucculent.jpg">
+<img src="homesucculent.jpg" alt="variety of succulent" width="200" height="200">
+</a>
+
+<p>
+We also carry a wide variety of succulents such as Aloe Vera, Crown of Thorns, Astridia and many more outdoor plants for you to choose from.
+</p>
+
+
+</div>
+
+<h4> A quick video giving tips on how to care for plants. </p>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LoWIqizH1m4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+</main>
+<footer>
+Copyright &copy 2022 Lulu's Plant Nursery<br>
+<a href="mailto:alexortiz@gmail.com">alexortiz@gmail.com</a>
+</footer>
+</div>
+</body>
+</html>
+
